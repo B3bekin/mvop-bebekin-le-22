@@ -1,5 +1,6 @@
 import { AiOutlineSearch } from "react-icons/ai";
 import NavItem from "./NavItem";
+import LogoRed from "../../assets/logo.png";
 
 const Header = () => {
   const navItems = [
@@ -29,8 +30,8 @@ const Header = () => {
           ))}
         </div>
         <div className="">
-          <div>
-            <AiOutlineSearch />
+          <div className="h-20 rounded-full w-20">
+            <img src={LogoRed} alt="logo"/>
           </div>
         </div>
       </div>

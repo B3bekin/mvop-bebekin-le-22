@@ -13,12 +13,12 @@ function App() {
           <h1 className="mb-4 pt-20 text-6xl text-center font-semibold leading-normal font-sans ">Top Quality Digital <br></br>Products To Explore </h1>
           <h2 className=" text-neutral-500 text-2xl pt-4 text-center">Get yout blood test delivered at let home colection,<br></br> our samples will be used only <br></br>by our certificeted clients</h2>
           <h3 className=" text-red-500 text-xl text-center items-center p-9">Explore</h3>
-          <div className="flex flex-row justify-between">
+          <div className="mx-auto content-center flex flex-row justify-between">
             <div className="p-8">
               <img
                 src={Undraw}
                 alt="Ilustrace"
-                className="max-w-lg mx-auto mb-40 content-center hover:cursor-pointer "
+                className="max-w-lg mb-40  hover:cursor-pointer"
               />
             </div>
           </div>
