@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "./components/Header/Header";
-import Undraw from "./assets/ud_projections.svg";
+import Doctors from "./assets/doctors.png";
+import Greetings from "./assets/welcom.png";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,11 +15,11 @@ function App() {
           <h2 className=" text-neutral-500 text-2xl pt-4 text-center">Get yout blood test delivered at let home colection,<br></br> our samples will be used only <br></br>by our certificeted clients</h2>
           <h3 className=" text-red-500 text-xl text-center items-center p-9">Explore</h3>
           <div className="mx-auto content-center flex flex-row justify-between">
-            <div className="p-8">
+            <div className="py-0">
               <img
-                src={Undraw}
-                alt="Ilustrace"
-                className="max-w-lg mb-40  hover:cursor-pointer"
+                src={Greetings}
+                alt="Zdravím"
+                className=" hover:cursor-pointer"
               />
             </div>
           </div>
@@ -60,39 +61,41 @@ function App() {
                 </p>
               </div>}
             </div>
+          </div>
+          <div className="flex flex-row mt-20">
+            <div className="">
+              <img
+                src={Doctors}
+                alt="Doctors"
+                className="max-w-lg mx-auto  hover:cursor-pointer "
+              />
+            </div>
 
-            <div className="flex flex-row mt-20 justify-between">
-              <div className="">
-                <img
-                  src={Undraw}
-                  alt="Ilustrace"
-                  className="max-w-lg mx-auto  hover:cursor-pointer "
-                />
-                
-              </div>
-              <div className="">
-                </div><h1 className="  text-4xl min-w-80%  font-semibold leading-normal font-sans ">Business Goals achieved</h1>
-                <div class="grid grid-cols-2 ">
-              <div>{
-                <div className="">
-                  <p className="text-medium bg-blue-100 p-3  rounded-xl ">
-                    Our job is to make the blood safe. We will do whatever it takes, to make that possible.
-                  </p>
-                </div>}
-              </div>
-              <div>{
-                <div className="">
-                  <p className="text-medium min-w-60% bg-blue-100 p-3  rounded-xl gap-4 ">
-                    Our job is to make the blood safe. We will do whatever it takes, to make that possible.
-                  </p>
-                </div>}
+            <div className="">
+              <h1 className=" pl-10 text-4xl font-semibold leading-normal font-sans ">Business Goals achieved</h1>
+              
+              <div class="flex flex-col gap-5">
+                <div className="pl-10 px-5 ">{
+                  <div className="">
+                    <p className="text-medium bg-main text-white min-width-20px p-3 rounded-xl ">
+                      Our job is to make the blood safe. We will do whatever it takes, to make that possible.
+                    </p>
+                  </div>}
+                </div>
+
+                <div>{
+                  <div className="pl-10 px-10 ">
+                    <p className="text-medium  bg-main text-white p-3 rounded-xl gap-4 ">
+                      Our job is to make the blood safe. We will do whatever it takes, to make that possible.
+                    </p>
+                  </div>}
+                </div>
               </div>
             </div>
-            </div>
-            
+
           </div>
           {/* <h1 className="mr-0 pt-20 text-4xl min-w-80% ml-40 font-semibold leading-normal font-sans ">Business Goals achieved</h1> */}
-          
+
         </div>
       </main>
     </div>

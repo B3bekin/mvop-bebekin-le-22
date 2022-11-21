@@ -31,7 +31,7 @@ const Header = () => {
         </div>
         <div className="">
           <div className="h-20 rounded-full w-20">
-            <img src={LogoRed} alt="logo"/>
+            <img src={LogoRed} alt="logo" className="rounded-full "/>
           </div>
         </div>
       </div>
