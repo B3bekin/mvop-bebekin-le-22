@@ -21,5 +21,9 @@
     "postcss": "^8.4.18",
     "tailwindcss": "^3.2.2",
     "vite": "^3.2.3"
-  }
+  },
+  "description": "Připravený repo s ukázkou tailwindu.",
+  "main": "vite.config.js",
+  "author": "",
+  "license": "ISC"
 }

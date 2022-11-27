@@ -2,6 +2,10 @@ import { useState } from "react";
 import Header from "./components/Header/Header";
 import Doctors from "./assets/doctors.png";
 import Greetings from "./assets/welcom.png";
+import ThunderText from "./content/performance"
+import CaseText from "./content/partnership"
+import CrownText from "./content/subcription"
+import CommentText from "./content/support"
 
 function App() {
   const [count, setCount] = useState(0);
@@ -25,7 +29,19 @@ function App() {
           </div>
           <p className="text-xs text-red-500  text-center">WHATS THE FUNCTION<br></br></p>
           <p className="text-xl text-neutral-500 mb-12 text-center"> Meet the features of our product</p>
-          <div class="grid grid-cols-4 gap-4">
+
+          <ThunderText/>
+
+          <CaseText/>
+
+          <CrownText/>
+
+          <CommentText/>
+
+          
+
+
+          {/* <div class="grid grid-cols-4 gap-4">
             <div>{
               <div className="">
                 <p className="p-1 font-semibold p-2">Fast performance</p>
@@ -61,7 +77,7 @@ function App() {
                 </p>
               </div>}
             </div>
-          </div>
+          </div> */}
           <div className="flex flex-row mt-20">
             <div className="">
               <img
