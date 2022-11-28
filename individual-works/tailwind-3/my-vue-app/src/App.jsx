@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
+import Posts from './Posts' 
 
 const delay = (ms) => {
   console.log("start delay")
@@ -53,7 +54,9 @@ function App() {
         }}>
         delete
         </button>
-
+        
+        <Posts/>
+        
         {loading == true ? "Loading...." : null}
 
         {/* <button onClick={() => setCount((count) => count + 1)}>
