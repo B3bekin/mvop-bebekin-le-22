@@ -30,15 +30,17 @@ function App() {
           <p className="text-xs text-red-500  text-center">WHATS THE FUNCTION<br></br></p>
           <p className="text-xl text-neutral-500 mb-12 text-center"> Meet the features of our product</p>
 
-          <ThunderText/>
 
-          <CaseText/>
+          <div className="flex">
+            <ThunderText />
 
-          <CrownText/>
+            <CaseText />
 
-          <CommentText/>
+            <CrownText />
 
-          
+            <CommentText />
+          </div>
+
 
 
           {/* <div class="grid grid-cols-4 gap-4">
@@ -78,8 +80,9 @@ function App() {
               </div>}
             </div>
           </div> */}
+
           <div className="flex flex-row mt-20">
-            <div className="">
+            <div className="p-10">
               <img
                 src={Doctors}
                 alt="Doctors"
@@ -89,28 +92,47 @@ function App() {
 
             <div className="">
               <h1 className=" pl-10 text-4xl font-semibold leading-normal font-sans ">Business Goals achieved</h1>
-              
-              <div class="flex flex-col gap-5">
-                <div className="pl-10 px-5 ">{
+
+              <div class="flex flex-col pl-10 gap-5">
+                <ThunderText />
+
+                <CaseText />
+                {/* <div className="pl-10 px-5 ">{
                   <div className="">
                     <p className="text-medium bg-main text-white min-width-20px p-3 rounded-xl ">
                       Our job is to make the blood safe. We will do whatever it takes, to make that possible.
                     </p>
                   </div>}
-                </div>
+                </div> */}
 
-                <div>{
+                {/* <div>{
                   <div className="pl-10 px-10 ">
                     <p className="text-medium  bg-main text-white p-3 rounded-xl gap-4 ">
                       Our job is to make the blood safe. We will do whatever it takes, to make that possible.
                     </p>
                   </div>}
-                </div>
+                </div> */}
               </div>
             </div>
 
           </div>
           {/* <h1 className="mr-0 pt-20 text-4xl min-w-80% ml-40 font-semibold leading-normal font-sans ">Business Goals achieved</h1> */}
+
+
+          <div className="text-center">
+            <div className="text-red-600 text-s">Quality features</div>
+            <h1 className="text-4xl font-semibold leading-normal font-sans ">Amazing usefull features</h1>
+          </div>
+
+          <div className="flex flex-wrap justify-between gap-5">
+            <ThunderText  />
+
+            <CaseText/>
+
+            <CrownText />
+
+            <CommentText />
+          </div>
 
         </div>
       </main>
