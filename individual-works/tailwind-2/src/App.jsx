@@ -18,20 +18,20 @@ function App() {
           <h1 className="mb-4 pt-20 text-6xl text-center font-semibold leading-normal font-sans ">Top Quality Digital <br></br>Products To Explore </h1>
           <h2 className=" text-neutral-500 text-2xl pt-4 text-center">Get yout blood test delivered at let home colection,<br></br> our samples will be used only <br></br>by our certificeted clients</h2>
           <h3 className=" text-red-500 text-xl text-center items-center p-9">Explore</h3>
-          <div className="mx-auto content-center flex flex-row justify-between">
-            <div className="py-0">
-              <img
-                src={Greetings}
-                alt="Zdravím"
-                className=" hover:cursor-pointer"
-              />
-            </div>
+
+          <div className="">
+            <img
+              src={Greetings}
+              alt="Zdravím"
+              className=" hover:cursor-pointer"
+            />
           </div>
+
           <p className="text-xs text-red-500  text-center">WHATS THE FUNCTION<br></br></p>
           <p className="text-xl text-neutral-500 mb-12 text-center"> Meet the features of our product</p>
 
 
-          <div className="flex">
+          <div className="flex gap-3">
             <ThunderText />
 
             <CaseText />
@@ -86,14 +86,14 @@ function App() {
               <img
                 src={Doctors}
                 alt="Doctors"
-                className="max-w-lg mx-auto  hover:cursor-pointer "
+                className="max-w-lg mx-auto rounded-3xl shadow-md hover:cursor-pointer "
               />
             </div>
 
             <div className="">
               <h1 className=" pl-10 text-4xl font-semibold leading-normal font-sans ">Business Goals achieved</h1>
 
-              <div class="flex flex-col pl-10 gap-5">
+              <div class="flex flex-col pl-10 pt-2 gap-5">
                 <ThunderText />
 
                 <CaseText />
@@ -121,13 +121,13 @@ function App() {
 
           <div className="text-center">
             <div className="text-red-600 text-s">Quality features</div>
-            <h1 className="text-4xl font-semibold leading-normal font-sans ">Amazing usefull features</h1>
+            <h1 className="text-4xl font-semibold leading-normal pb-5 font-sans ">Amazing usefull features</h1>
           </div>
 
-          <div className="flex flex-wrap justify-between gap-5">
-            <ThunderText  />
+          <div className="flex flex-wrap pt-2 pb-10 justify-between gap-5">
+            <ThunderText />
 
-            <CaseText/>
+            <CaseText />
 
             <CrownText />
 
