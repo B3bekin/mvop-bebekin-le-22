@@ -22,8 +22,9 @@ function App() {
       <div > {isPost ? <Post/>: null}</div>
          {/* podminka ?  true : false  */}
 
+
       <p className="read-the-docs">
-        bussin on god dawwg
+        This should work well, I hope
       </p>
     </div>
   )

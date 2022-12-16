@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import Comp from "./assets/component.jsx"
@@ -6,25 +6,17 @@ import Comp from "./assets/component.jsx"
 function App() {
   const [count, setCount] = useState(0)
 
-  useEffect(() => {
-    addComponent(() => {
-      setCount((c) => count + 1);
-    });
-  });
 
-  useEffect(() => {
-    removeComponent(() => {
-      setCount((c) => count - 1);
-    });
-  });
+  function addComponent() {
+    setCount((c) => c + 1);
+  }
 
-  // const addComponent = function{
-  //   setCount((c) = c + 1);
-  // }
+  function removeComponent() {
 
-  // const removeComponent = function{
-  //   setCount((c) = c - 1);
-  // }
+    count > 0 ? setCount((c) => c - 1) : null;
+    // pokud je to větší než 0, tak můžeme odebrat
+
+  }
 
   return (
     <div className="">
@@ -36,22 +28,29 @@ function App() {
       <div className="flex justify-center py-10 gap-10">
         <div className='bg-green-700 text-white px-5 py-3 hover:shadow-2xl hover:bg-green-900 transition-all duration-200 rounded-full cursor-pointer'>
           {/* <button onClick={(addComponent)}> */}
-          <button onClick={() => setCount((count) => count + 10)}>
+          <button onClick={() => addComponent()}>
             Increase {count}
           </button>
         </div>
 
         <div className='bg-red-700 text-white px-5 py-3 hover:shadow-2xl hover:bg-red-900 transition-all duration-200 rounded-full cursor-pointer'>
-          <button onClick={() => setCount((count) => count - 10)}>
+          <button onClick={() => removeComponent()}>
             Decrease {count}
           </button>
         </div>
       </div>
 
+      <div className='grid gap-20 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4'>
 
 
-      <div className='grid grid-cols-4 gap-20 '>
-        <Comp />
+        {/* {console.log(Array.from(Array(count).keys())) } */}
+        {/* vypíšeme do konzole, pole s počtem prvků count */}
+
+        {count > 0 ? Array.from(Array(count).keys()).map(function () {
+          return <Comp />
+        }) : <div className='text-gray-400 font-thin text-3xl text-center'>Try pressing the buttons :)</div>}
+        {/* pole se stejným počtem jako count, pro kařdý prvek vracíme komponentu */}
+
       </div>
 
     </div>
