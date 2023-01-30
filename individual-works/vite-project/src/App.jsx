@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react'
 import axios from './request.jsx'
 
 function App() {
-  const [data, setData] = useState([])
-  const [stuff, setStuff] = useState(true)
+  const [data, setData] = useState()
+  const [stuff, setStuff] = useState
   const [loading, setLoading] = useState
 
   loading = async () => {
@@ -18,6 +18,7 @@ function App() {
       setStuff(data)
       
     }
+    // catch console.error(error);
   }
 
   useEffect(() => { loading() }, [])
@@ -47,7 +48,6 @@ function App() {
     </div>
   )
 }
-
 
 
 export default App
