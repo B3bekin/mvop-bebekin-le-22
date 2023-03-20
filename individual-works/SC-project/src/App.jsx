@@ -1,9 +1,10 @@
-import Header from "./Header"
+import Aktuality from "./Aktuality"
+import Header from "./Aktuality"
 
 function App() {
   return (
     <div className="">
-      <Header/>
+      <Aktuality/>
     </div>
   )
 }
