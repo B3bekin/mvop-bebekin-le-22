@@ -1,10 +1,18 @@
-import Aktuality from "./Aktuality"
-import Header from "./Aktuality"
+//Not IMPORTant, ha ha ha
+// import Header from "./Aktuality"
+
+import FAQ from "./FAQ"
+
+// import Aktuality from "./Aktuality"
+
+// import Denicky from "./Galerie"
 
 function App() {
   return (
     <div className="">
-      <Aktuality/>
+      {/* <Denicky/> */}
+      {/* <Aktuality/> */}
+      <FAQ/>
     </div>
   )
 }
