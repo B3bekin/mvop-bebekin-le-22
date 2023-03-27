@@ -4,6 +4,8 @@ import TimeFlies from "../public/time-left.png"
 import Exchange from "../public/exchange.png"
 import Building from "../public/pobocka.jpg"
 
+import { Link } from "react-router-dom"
+
 function Aktuality() {
     return (
         <div>
@@ -14,14 +16,14 @@ function Aktuality() {
                     <div className="bg-orange-500 flex justify-between px-14">
                         <div className="flex flexbox flex-col-reverse pb-1">
                             <nav className="flex gap-10 text-white font-semibold text-2xl">
-                                <ul>Novinky</ul>
-                                <ul className="underline hover:underline-offset-4">Aktuality</ul>
-                                <ul>Deníčky</ul>
-                                <ul>FAQ</ul>
+                                <ul><Link to="/novinky">Novinky</Link></ul>
+                                <ul className="underline hover:underline-offset-4"><Link to="/aktuality">Aktuality</Link></ul>
+                                <ul><Link to="/denicky">Deníčky</Link></ul>
+                                <ul><Link to="/faq">FAQ</Link></ul>
                             </nav>
                         </div>
                         <div className="pr-0">
-                            <img src={Picture} alt="logo" className="w-[100px]" />
+                        <Link to="/home"><img src={Picture} alt="logo" className="w-[100px]" /></Link>
                         </div>
                     </div>
 

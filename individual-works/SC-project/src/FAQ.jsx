@@ -1,5 +1,6 @@
 import Picture from "../public/logos.svg"
 import Guys from "../public/authors.jpg"
+import { Link } from "react-router-dom"
 
 function FAQ() {
 
@@ -11,14 +12,14 @@ function FAQ() {
                     <div className="bg-orange-500 flex justify-between px-14">
                         <div className="flex flexbox flex-col-reverse pb-1">
                             <nav className="flex gap-10 text-white font-semibold text-2xl">
-                                <ul>Novinky</ul>
-                                <ul>Aktuality</ul>
-                                <ul>Deníčky</ul>
-                                <ul className="underline hover:underline-offset-4">FAQ</ul>
+                                <ul><Link to="/novinky">Novinky</Link></ul>
+                                <ul><Link to="/aktuality">Aktuality</Link></ul>
+                                <ul><Link to="/denicky">Deníčky</Link></ul>
+                                <ul className="underline"><Link to="/faq">FAQ</Link></ul>
                             </nav>
                         </div>
                         <div className="pr-0">
-                            <img src={Picture} alt="logo" className="w-[100px]" />
+                            <Link to="/home"><img src={Picture} alt="logo" className="w-[100px]" /></Link>
                         </div>
                     </div>
 
@@ -29,9 +30,9 @@ function FAQ() {
                 <div className="px-28 ">
                     <div className="grid grid-cols-9 gap-6 pt-20">
 
-                        <div className="col-start-3 col-end-5 ">
+                        <div className="col-start-2 col-end-6 ">
                             <div className="flex">
-                                <img src={Guys} alt="" className="rounded-lg"/>
+                                <img src={Guys} alt="" className="rounded-lg" />
                             </div>
                         </div>
 
