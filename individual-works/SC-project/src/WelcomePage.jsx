@@ -1,5 +1,5 @@
-import Picture from "../public/logos.svg"
-import Bookshelf from "../public/the-main-bookshelf.png"
+import Picture from "../src/public/logos.svg"
+import Bookshelf from "../src/public/the-main-bookshelf.png"
 
 import { Link } from "react-router-dom"
 

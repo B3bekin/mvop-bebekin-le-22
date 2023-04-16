@@ -1,9 +1,9 @@
-import Picture from "../public/logos.svg"
+import Picture from "../src/public/logos.svg"
 import { Link } from "react-router-dom"
 
-import Anti1 from "../public/anti-1.png"
-import Anti2 from "../public/anti-2.png"
-import Anti3 from "../public/anti-3.png"
+import Anti1 from "../src/public/anti-1.png"
+import Anti2 from "../src/public/anti-2.png"
+import Anti3 from "../src/public/anti-3.png"
 
 function News() {
 

@@ -1,5 +1,5 @@
-import Picture from "../public/logos.svg"
-import Guys from "../public/authors.jpg"
+import Picture from "../src/public/logos.svg"
+import Guys from "../src/public/authors.jpg"
 import { Link } from "react-router-dom"
 
 function FAQ() {

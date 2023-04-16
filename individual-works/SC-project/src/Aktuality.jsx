@@ -1,8 +1,8 @@
-import Picture from "../public/logos.svg"
-import PlaceMark from "../public/placeholder-filled-point.png"
-import TimeFlies from "../public/time-left.png"
-import Exchange from "../public/exchange.png"
-import Building from "../public/pobocka.jpg"
+import Picture from "../src/public/logos.svg"
+import PlaceMark from "../src/public/placeholder-filled-point.png"
+import TimeFlies from "../src/public/time-left.png"
+import Exchange from "../src/public/exchange.png"
+import Building from "../src/public/pobocka.jpg"
 
 import { Link } from "react-router-dom"
 

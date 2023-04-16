@@ -1,13 +1,13 @@
-import Picture from "../public/logos.svg"
+import Picture from "../src/public/logos.svg"
 import { Link } from "react-router-dom"
 //books:
-import Yellow from "../public/bks10.jpg"
-import Red from "../public/bks5.jpg"
-import Blue from "../public/bks4.jpg"
+import Yellow from "../src/public/bks10.jpg"
+import Red from "../src/public/bks5.jpg"
+import Blue from "../src/public/bks4.jpg"
 //another books:
-import OpenedWhite from "../public/bks6.jpg"
-import StandingWhite from "../public/bks2.jpg"
-import LayingWhite from "../public/bks7.jpg"
+import OpenedWhite from "../src/public/bks6.jpg"
+import StandingWhite from "../src/public/bks2.jpg"
+import LayingWhite from "../src/public/bks7.jpg"
 
 function Denicky() {
 
